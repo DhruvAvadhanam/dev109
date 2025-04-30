@@ -1,1 +1,67 @@
+            * {
+            font-family: Arial, Verdana, sans-serif;
+            color: #665544;
+            text-align: center;}
 
+			body {
+			    background-image: url("https://images.pexels.com/photos/1287145/pexels-photo-1287145.jpeg?cs=srgb&dl=pexels-eberhardgross-1287145.jpg&fm=jpg");
+				background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 90%;
+				margin: 0 auto;}
+
+			#content {
+				overflow: auto;}
+
+			#nav, #feature, #footer {
+				margin: 1%;}
+
+			.column1, .column2, .column3 {
+				width: 31.3%;
+				float: left;
+				margin: 1%;}
+
+			.column3 {
+				margin-right: 0%;}
+
+			li {
+				display: inline;
+				padding: 0.5em;}
+
+			#nav, #footer {
+				background-color: #efefef;
+				padding: 0.5em 0;}
+
+			#feature, .article {
+				height: 10em;
+				margin-bottom: 1em;
+				background-color: #efefef;}
+
+            .column1 {
+              background-color: orange;}
+
+            .column2 {
+              background-color: green;}
+
+             .column3 {
+              background-color: pink;}
+
+             #feature {
+              background-color: #8CC63E;
+              background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/be02a4e3-e357-4bde-b048-3a8a59e11d49/d2l0r5a-139fe926-6e3e-4fb0-bbb7-81fce6fe6967.png/v1/fill/w_1654,h_483/snowy_mountain_png_by_absurdwordpreferred_d2l0r5a-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjkyOCIsInBhdGgiOiJcL2ZcL2JlMDJhNGUzLWUzNTctNGJkZS1iMDQ4LTNhOGE1OWUxMWQ0OVwvZDJsMHI1YS0xMzlmZTkyNi02ZTNlLTRmYjAtYmJiNy04MWZjZTZmZTY5NjcucG5nIiwid2lkdGgiOiI8PTEwMDE2In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.7bganEWMYi0Cawayu1TgTTIH2U9gSO8Tw_AfkZmQu64");
+              background-size:contain;
+              background-position: bottom;
+              background-repeat:no-repeat;
+              }
+
+             #nav {
+              background-color: magenta;}
+
+             #footer {
+              background-color: brown;}
+
+             h1 {
+              font-family: 'DehutiBook', cursive, sans-serif;}
+
+        
