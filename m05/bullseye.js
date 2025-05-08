@@ -1,6 +1,6 @@
 var input = prompt("What value do you want the multiplication table for? (0-10)");
 
-if (isNaN(input) || isNull(input)) {
+if (isNaN(input) || input==null) {
   input=0;
 }
 
