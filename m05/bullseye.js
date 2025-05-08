@@ -4,6 +4,8 @@ if (isNaN(input) || input==null) {
   input=0;
 }
 
+input = Number (input);
+
 var msg = "<h2>Multiplication Table" + "</h2>";
 var output = msg;
 
