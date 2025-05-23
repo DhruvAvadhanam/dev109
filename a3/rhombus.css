@@ -1,21 +1,29 @@
+body {
+  background: white;
+  font-family: monospace;
+}
 
-    body{
-      background: white;
-    }
+.rhombus-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "upleft upright"
+    "downleft downright";
+  gap: 0;
+}
 
-  .rhombus-container {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 0px;
-    font-family: monospace;
-  }
+.up-left     { grid-area: upleft; }
+.up-right    { grid-area: upright; }
+.down-left   { grid-area: downleft; }
+.down-right  { grid-area: downright; }
 
-  .rhombus-container div {
-    white-space: pre;
-  }
-
-  p {
-    margin: 0;
-    padding: 0;
-  }
-
+.rhombus-part {
+  white-space: pre;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
