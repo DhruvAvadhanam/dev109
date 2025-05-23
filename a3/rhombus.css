@@ -1,0 +1,21 @@
+
+    body{
+      background: white;
+    }
+
+  .rhombus-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0px;
+    font-family: monospace;
+  }
+
+  .rhombus-container div {
+    white-space: pre;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
