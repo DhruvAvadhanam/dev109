@@ -1,41 +1,42 @@
 document.getElementById("addItem").addEventListener("click", addItem);
 
 function addItem() {
-  try {
-    var input = document.getElementById("item");
-    var itemText = input.value.trim(); // remove leading/trailing spaces
+  var input = document.getElementById("item");
+  var itemText = input.value.trim(); // Clean up input
 
-    // Check for empty input and throw error if so
+  try {
     if (itemText === "") {
-      throw new Error("Cannot add empty item.");
+      throw new Error("Empty input.");
     }
 
-    // Create new <li> and text node
+    // Create new list item
     var newEl = document.createElement("li");
     var newText = document.createTextNode(itemText);
     newEl.appendChild(newText);
 
-    // Append to the list
+    // Add to list
     var position = document.getElementById("todo");
     position.appendChild(newEl);
 
+    // Extra Credit: Clear the input box
     input.value = "";
   } catch (e) {
-    console.log(e); 
-  } finally {
-    if (document.getElementById("item").value.trim() === "") {
-      // Display an error message on the page (no alert)
-      var msg = document.getElementById("error-message");
-      if (!msg) {
-        msg = document.createElement("p");
-        msg.id = "error-message";
-        msg.style.color = "white";
-        msg.textContent = "Please enter a grocery item before adding.";
-        document.getElementById("page").appendChild(msg);
-      }
-      return; 
+    console.log(e);
+
+    // Show error message on screen
+    var msg = document.getElementById("error-message");
+    if (!msg) {
+      msg = document.createElement("p");
+      msg.id = "error-message";
+      msg.style.color = "white";
+      msg.textContent = "Please enter an item before adding it to the list.";
+      document.getElementById("page").appendChild(msg);
     } else {
-      // Remove error message if it exists
+      msg.textContent = "Please enter an item before adding it to the list.";
+    }
+  } finally {
+    // If the input was valid, remove any existing error
+    if (itemText !== "") {
       var msg = document.getElementById("error-message");
       if (msg) {
         msg.remove();
