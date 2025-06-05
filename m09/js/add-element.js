@@ -5,7 +5,7 @@ function addItem() {
   var itemText = input.value.trim(); // Clean up input
 
   try {
-    if (itemText === "") {
+    if (itemText === "" || itemText===null) {
       throw new Error("Empty input.");
     }
 
@@ -32,15 +32,16 @@ function addItem() {
       msg.textContent = "Please enter an item before adding it to the list.";
       document.getElementById("page").appendChild(msg);
     } else {
-      msg.textContent = "Please enter an item before adding it to the list.";
-    }
+        msg.textContent = "Please enter an item before adding it to the list.";
+        msg.style.display = "block";
+      }
   } finally {
     // If the input was valid, remove any existing error
     if (itemText !== "") {
       var msg = document.getElementById("error-message");
       if (msg) {
-        msg.remove();
-      }
+      msg.style.display = "none";
     }
   }
+ }
 }
