@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head> <!-- Document head containing metadata, title, and link to the CSS stylesheet -Ian -->
+		<meta charset="UTF-8">
+		<meta name="description" content="Input Form page for Group 1. It's purpose is to request a user input and then use JavaScript to return output to this page">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>A4- Validation Form</title>
+		<link rel="stylesheet" href="css/input_form.css">
+	</head>
+	<body> <!-- Body of the document that contains the core HTML elements of the page-->
+		<header>
+			<h1>A#4- Validation Form</h1> <!--page title -Dhruv-->
+			<form id="myform" onsubmit="return validateForm();" action="thankyou.html">
+<p>
+	<label for='FirstName'>First Name:</label> <!--first name input-->
+	<input type="text" id="FirstName" name="FirstName" />
+              <div id=errorMessagesfirst> </div>
+</p>
+<p>
+	<label for='LastName'>Last Name:</label> <!--last name input-->
+	<input type="text" id="LastName" name="LastName" />
+                <div id=errorMessageslast> </div>
+
+</p>
+<p>
+	<label for='Email'>Email:</label> <!--email name input-->
+	<input type="text" id="Email" name="Email" />
+                <div id=errorMessagesemail> </div>
+
+</p>
+<p>
+	<label for='Phone'>Phone:</label> <!--phone input-->
+	<input type="text" id="Phone" name="Phone" />
+                <div id=errorMessagesphone> </div>
+
+</p>
+<p>
+	<label for='Username'>Username:</label> <!--username input-->
+	<textarea cols="20" rows="1" id="Username" name="Username"></textarea>
+                <div id=errorMessagesusername> </div>
+
+</p> 
+              
+<p>
+	<label for='Password'>Password:</label> <!--password input-->
+	<textarea cols="20" rows="1" id="Password" name="Username"></textarea>
+                <div id=errorMessagespassword> </div>
+
+</p>
+              
+<p>
+	<label for='Address'>Address:</label> <!--address input-->
+	<textarea cols="20" rows="5" id="Address" name="Address"></textarea>
+                <div id=errorMessagesaddress> </div>
+
+</p>
+              
+<p>
+	<label for='City'>City:</label> <!--city input-->
+	<textarea cols="20" rows="1" id="City" name="City"></textarea>
+                <div id=errorMessagescity> </div>
+
+</p>
+              
+<p>
+	<label for='State'>State:</label> <!--state selection input-->
+	<select id="State"  name="State">
+        <option value="000" selected="selected">[choose yours]</option>
+        <option value="008">AL</option>
+        <option value="012">AK</option>
+        <option value="016">AZ</option>
+        <option value="020">AR</option>
+        <option value="024">CA</option>
+        <option value="660">CO</option>
+        <option value="010">CT</option>
+        <option value="028">DE</option>
+        <option value="032">FL</option>
+        <option value="051">GA</option>
+        <option value="533">HI</option>
+        <option value="008">ID</option>
+        <option value="012">IL</option>
+        <option value="016">IN</option>
+        <option value="020">IA</option>
+        <option value="024">KS</option>
+        <option value="660">KY</option>
+        <option value="010">LA</option>
+        <option value="028">ME</option>
+        <option value="032">MD</option>
+        <option value="051">MA</option>
+        <option value="533">MI</option>
+        <option value="008">MN</option>
+        <option value="012">MS</option>
+        <option value="016">MO</option>
+        <option value="020">MT</option>
+        <option value="024">NE</option>
+        <option value="660">NV</option>
+        <option value="010">NH</option>
+        <option value="028">NM</option>
+        <option value="032">NY</option>
+        <option value="051">NC</option>
+        <option value="533">ND</option>
+        <option value="028">OH</option>
+        <option value="032">OK</option>
+        <option value="051">OR</option>
+        <option value="533">PA</option>
+        <option value="008">RI</option>
+        <option value="012">SC</option>
+        <option value="016">SD</option>
+        <option value="020">TN</option>
+        <option value="024">TX</option>
+        <option value="660">UT</option>
+        <option value="010">VT</option>
+        <option value="028">VA</option>
+        <option value="032">WA</option>
+        <option value="051">WV</option>
+        <option value="533">WI</option>
+        <option value="533">WY</option>
+        <option value="533">WA DC</option>
+      
+	</select>
+                <div id=errorMessagesstate> </div>
+
+</p>
+              
+ <p>
+	<label for='Country'>Country:</label> <!--country selection input-->
+	<select id="Country"  name="Country">
+        <option value="000" selected="selected">[choose yours]</option>
+        <option value="008">USA</option>
+        <option value="012">India</option>
+        <option value="016">China</option>
+        <option value="020">England</option>
+        <option value="024">Australia</option>
+        <option value="660">Argentina</option>
+        <option value="660">Other</option>
+	</select>
+                 <div id=errorMessagescountry> </div>
+
+</p>             
+  
+<p>
+	<label for='ZipCode'>Zip Code:</label> <!--zip code input-->
+	<textarea cols="20" rows="1" id="ZipCode" name="ZipCode"></textarea>
+                <div id=errorMessageszipcode> </div>
+
+</p>            
+              
+<p>
+	<input type="submit" name="submit" value="Submit">
+</p>
+</form> 
+  <script src="js/form_validation.js"></script>
+
+          </body>
+      </html> 
