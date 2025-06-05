@@ -2,67 +2,66 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Input Form page for Group 1. Its purpose is to request user input and use JavaScript to return output to this page.">
+  <meta name="description" content="Input Form page for Group 1. Its purpose is to request a user input and then use JavaScript to return output to this page">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>A4- Validation Form</title>
   <link rel="stylesheet" href="input_form.css">
 </head>
 <body>
   <header>
-    <h1>A#4 - Validation Form</h1>
+    <h1>A#4- Validation Form</h1>
   </header>
 
   <form id="myform" onsubmit="return validateForm();" action="thankyou.html">
-
-    <p>
+    <div class="form-row">
       <label for="FirstName">First Name:</label>
       <input type="text" id="FirstName" name="FirstName">
       <div id="errorMessagesfirst"></div>
-    </p>
+    </div>
 
-    <p>
+    <div class="form-row">
       <label for="LastName">Last Name:</label>
       <input type="text" id="LastName" name="LastName">
       <div id="errorMessageslast"></div>
-    </p>
+    </div>
 
-    <p>
+    <div class="form-row">
       <label for="Email">Email:</label>
       <input type="text" id="Email" name="Email">
       <div id="errorMessagesemail"></div>
-    </p>
+    </div>
 
-    <p>
+    <div class="form-row">
       <label for="Phone">Phone:</label>
       <input type="text" id="Phone" name="Phone">
       <div id="errorMessagesphone"></div>
-    </p>
+    </div>
 
-    <p>
+    <div class="form-row">
       <label for="Username">Username:</label>
       <textarea cols="20" rows="1" id="Username" name="Username"></textarea>
       <div id="errorMessagesusername"></div>
-    </p>
+    </div>
 
-    <p>
+    <div class="form-row">
       <label for="Password">Password:</label>
-      <textarea cols="20" rows="1" id="Password" name="Password"></textarea>
+      <textarea cols="20" rows="1" id="Password" name="Username"></textarea>
       <div id="errorMessagespassword"></div>
-    </p>
+    </div>
 
-    <p>
+    <div class="form-row">
       <label for="Address">Address:</label>
       <textarea cols="20" rows="5" id="Address" name="Address"></textarea>
       <div id="errorMessagesaddress"></div>
-    </p>
+    </div>
 
-    <p>
+    <div class="form-row">
       <label for="City">City:</label>
       <textarea cols="20" rows="1" id="City" name="City"></textarea>
       <div id="errorMessagescity"></div>
-    </p>
+    </div>
 
-    <p>
+    <div class="form-row">
       <label for="State">State:</label>
       <select id="State" name="State">
         <option value="000" selected="selected">[choose yours]</option>
@@ -118,9 +117,9 @@
         <option value="533">WA DC</option>
       </select>
       <div id="errorMessagesstate"></div>
-    </p>
+    </div>
 
-    <p>
+    <div class="form-row">
       <label for="Country">Country:</label>
       <select id="Country" name="Country">
         <option value="000" selected="selected">[choose yours]</option>
@@ -133,17 +132,17 @@
         <option value="660">Other</option>
       </select>
       <div id="errorMessagescountry"></div>
-    </p>
+    </div>
 
-    <p>
+    <div class="form-row">
       <label for="ZipCode">Zip Code:</label>
       <textarea cols="20" rows="1" id="ZipCode" name="ZipCode"></textarea>
       <div id="errorMessageszipcode"></div>
-    </p>
+    </div>
 
-    <p>
+    <div class="form-row">
       <input type="submit" name="submit" value="Submit">
-    </p>
+    </div>
   </form>
 
   <script src="form_validation.js"></script>
