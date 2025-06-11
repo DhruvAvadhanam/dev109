@@ -1,15 +1,26 @@
 img {
-   display: block;
-   margin: auto;
-   width: 50%;
-}
+      display: block;
+      margin: 0 auto;
+      width: auto;
+      height: 400px;
+      max-width: 90%;
+    }
 
-#caption{
-  text-align: center;
-}
+#caption {
+      text-align: center;
+      max-width: 90%;
+      margin: 10px auto 20px;
+    }
 
 button {
-   display: block;
-   margin: auto;
-   width: 50%;
-}
+      display: inline-block;
+      width: 120px;
+      margin: 0 10px;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+p.validator {
+      text-align: center;
+      margin-top: 30px;
+    }
