@@ -1,9 +1,9 @@
     var myImages = [
       "https://ichef.bbci.co.uk/ace/standard/1024/cpsprodpb/1c40/live/e611fdf0-44ba-11f0-97b4-67d517414746.jpg",
       "https://fifpro.org/media/5chb3dva/lionel-messi_imago1019567000h.jpg?rxy=0.32986930611281567,0.18704579979466449&rnd=133378758718600000",
-      "https://i.ebayimg.com/images/g/oMEAAOSwOsFmujxS/s-l1200.jpg",
+      "https://media.cnn.com/api/v1/images/stellar/prod/221203124850-01-pele-legend-file.jpg?q=w_1110,c_fill",
       "https://i0.wp.com/thesefootballtimes.co/wp-content/uploads/2017/03/maradona86.jpg?fit=1600%2C1053&ssl=1",
-      "https://iffhs.com/images/legend-images/42/1.jpg"
+      "https://tmssl.akamaized.net/images/foto/galerie/eusebio-1670414809-98149.jpg"
     ];
 
     var captionImages = [
