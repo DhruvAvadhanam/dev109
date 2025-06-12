@@ -1,10 +1,12 @@
 img {
-      display: block;
-      margin: 0 auto;
-      width: auto;
-      height: 400px;
-      max-width: 90%;
-    }
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px; 
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
 
 #caption {
       text-align: center;
